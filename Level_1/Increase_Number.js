@@ -24,3 +24,7 @@ push() : 배열의 끝에 하나 이상의 요소를 추가하고, 배열의 새
 function solution(x, n) {
     return Array(n).fill(x).map((v, i) => (i + 1) * v)
 }
+// Array(n).fill(x) : n개의 길이만큼의 배열을 x로 시작하는 값으로 채운다
+// map() : 새로운 배열로 반환 
+// 구문 : 배열.map((요소, 인덱스, 배열) => { return 요소 });
+//          +1 : map뒤에 index는 0부터 시작하기 때문에
