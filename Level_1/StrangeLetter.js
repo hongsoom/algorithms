@@ -37,8 +37,8 @@ function toWeirdCase(s){
     TIP : 단어별로(separator=" "), 글자별로(separator="")                 
    j : 배열의 요소
    key : 현재 배열 요소의 index
-   s.split(' ').map(i => i.split('').map((j, key) => key % 2 === 0 ? j.toUpperCase() : j)
-                                        -> [["T","r","Y"],["H","e","L","l","O"],["W","o","R","l","D"]]
+   
+    join을 안하면  -> [["T","r","Y"],["H","e","L","l","O"],["W","o","R","l","D"]]
     .join('') -> ["TrY","HeLlO","WoRlD"]
     .join(' ') -> "TrY HeLlO WoRlD"
     만약 .join('')을 한다면 "TrYHeLlOWoRlD"
