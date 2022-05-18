@@ -12,6 +12,7 @@ function solution(s) {
 // Math.floor() : 주어진 숫자와 같거나 작은 정수 중에서 가장 큰 수 반환
 //                  소수값이 존재할 때 소수값을 버리는 역활을 하는 함수
 // ex) 5 -> 5    0.9 -> 0    -7.4 -> -8
+
 function solution(s) {
     return s.substr(Math.ceil(s.length / 2) - 1, s.length % 2 === 0 ? 2 : 1);
 }

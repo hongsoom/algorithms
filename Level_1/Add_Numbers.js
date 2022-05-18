@@ -23,9 +23,10 @@ function solution(numbers) {
     return 45 - numbers.reduce((cur, acc) => cur + acc, 0);
 }
 
-// reduce() : 배열의 각 요소에 대해 주어진 리듀서(reducer) 함수를 실행하고, 
-//                  하나의 결과값을 반환
-// 리듀서 함수는 네 개의 인자를 가짐
-// 누산기 (acc), 현재 값 (cur), 현재 인덱스 (idx), 원본 배열 (src)
-
-// 배열.reduce((누적값, 현잿값, 인덱스, 요소) => { return 결과 }, 초깃값);
+/* reduce() : 배열의 각 요소에 대해 주어진 리듀서(reducer) 함수를 실행하고, 하나의 결과값을 반환
+    arr.reduce(callback[, initialValue])
+        accumulator - callback함수의 반환값을 누적
+        currentValue - 배열의 현재 요소
+        index(Optional) - 배열의 현재 요소의 인덱스
+        array(Optional) - 호출한 배열
+*/
