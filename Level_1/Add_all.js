@@ -34,8 +34,8 @@ function solution(n){
     let sum = 0;
 
     do {
-        sum += n%10;
-        n = Math.floor(n/10);
+        sum += n%10;  // 3 + 2 + 1
+        n = Math.floor(n/10); // 123 -> 12 -> 1 -> 0
     } while(n > 0);
 
     return sum;
@@ -43,8 +43,8 @@ function solution(n){
 // Math.floor() : 주어진 숫자와 같거나 작은 정수 중에서 가장 큰 수를 반환
 
 function solution(n) {
-    var arr = n.toString().split('');
-    var sum = 0;
+    let arr = n.toString().split('');
+    let sum = 0;
     arr.forEach(element => {
         sum += parseInt(element);
     });
@@ -54,7 +54,7 @@ function solution(n) {
 
 function solution(n)
 {
-    var answer = 0;
+    let answer = 0;
     String(n).split('').map(data => answer += parseInt(data));
     return answer;
 }

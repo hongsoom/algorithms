@@ -28,5 +28,4 @@ return arr1.map((a,i) => a.map((b, j) => b + arr2[i][j]));
   index : 배열 내 현재 값의 인덱스
   array : 현재 배열
   thisArg : callbackFunction 내에서 this로 사용될 값
-
 */

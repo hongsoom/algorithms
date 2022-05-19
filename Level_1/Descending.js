@@ -34,8 +34,8 @@ function solution(n) {
 function solution(n) {
     let nums =[];
     do{
-        nums.push(n%10);
-        n=Math.floor(n/10);
+        nums.push(n%10); // 2 -> 7 -> 3 -> 8 -> 1 -> 1
+        n=Math.floor(n/10); // 11837 -> 1183 -> 118 -> 11 -> 1 -> 0 
     } while(n>0)
 
     return nums.sort((a,b)=>b-a).join('')*1;

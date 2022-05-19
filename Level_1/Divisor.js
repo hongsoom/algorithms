@@ -45,7 +45,7 @@ function solution(arr, divisor) {
 }
 
 /* filter() : 주어진 함수의 테스트를 통과하는 모든 요소를 모아 새로운 배열로 반환하는 메소드
-                true를 반환하면 요소를 유지하고, false를 반환하면 버린다.
+                콜백함수가 true를 반환하면 요소를 유지하고, false를 반환하면 버린다.
  ex) const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
      const result = words.filter(word => word.length > 6);
      console.log(result) -> ["exuberant", "destruction", "present"]
